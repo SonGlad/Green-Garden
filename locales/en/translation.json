@@ -1,0 +1,50 @@
+{
+    "header":{
+        "services": "Services",
+        "about": "About us",
+        "works": "How we work",
+        "contacts": "Contacts",
+        "contactUsText": "Contact us",
+        "contactUsNumber": "+380969692447",
+        "contactNumberText": "+934 53 444-7565",
+        "contactUsTextMessage": "Hello! I would like to order your services.",
+        "description": "We take care of your garden with love and dedication."
+    },
+    "hero":{
+        "name": "View of the Gardens",
+        "slogan":"Professional care for every garden"
+    },
+    "services":{
+        "title": "Services",
+        "descriptionOne":"Landscape design, design and creation of gardens",
+        "descriptionTwo":"Regular maintenance (pruning, planting, cleaning, restoration).",
+        "descriptionThree":"Renewal of existing green areas",
+        "descriptionFour":"Installation of irrigation systems and fertilizer systems",
+        "descriptionFive":"Vertical gardens",
+        "descriptionSix":"Consultation on landscaping find or make icons for these items for a block on the service website"
+    },
+    "about":{
+        "title": "About Us",
+        "textOne": "We are a team of professionals who are in love with nature. Our mission is to transform any space into an oasis of harmony and beauty. We have been engaged in landscape design, creating gardens and green areas for more than 10 years.",
+        "textTwo": "We know how to make your garden a place of inspiration, relaxation and tranquility. Our experts take into account every detail - from the composition of the soil to the unique needs of the plants.",
+        "textThree": "We use modern technologies such as automatic watering systems and vertical gardening to keep your garden looking its best all year round. Trust us and we will give you a green corner where nature comes to life!"
+    },
+    "work": {
+        "title":"How we work",
+        "subTitleOne": "Consultation and analysis",
+        "textOne": "We discuss your wishes, inspect the site and analyze its features (soil, lighting, climate)",
+        "subTitleTwo": "Project development",
+        "textTwo": "Our designers create a unique plan for your garden or green area, taking into account every detail.",
+        "subTitleThree": "Preparing the area",
+        "textThree": "We prepare the site for landscaping: we clean, fertilize the soil and install the necessary systems (watering, drainage).",
+        "subTitleFour": "Planting",
+        "textFour": "We plant selected plants, trees, flowers and create landscape elements in accordance with the approved project.",
+        "subTitleFive": "Service",
+        "textFive": "Our experts provide regular maintenance for your garden, including pruning, watering and pest control."
+    },
+    "footer":{
+        "workingTitle": "Working hours",
+        "workingHours": "from 9:00 to 21:00 daily",
+        "rights": "All rights reserved"
+    }
+}
