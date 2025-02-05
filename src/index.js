@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './components/App.jsx';
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from './globalStyles/globaleStyles.styled.js';
+import { GlobalStyle } from './globalStyles/globaleStyles.styled.js'
 import { theme } from './globalStyles/theme.js';
-// import { Provider } from 'react-redux';
-// import { PersistGate } from 'redux-persist/integration/react';
-// import {store, persistor} from "./redux/store.js";
+import { BrowserRouter } from 'react-router-dom';
+import { I18nextProvider } from "react-i18next";
+import { Suspense } from 'react';
+import i18n from './i18n';
+import './i18n.js';
+import { Loader } from './components/Loader/Loader.jsx';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,16 +18,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* <Provider store = {store}> */}
-      {/* <PersistGate loading={null} persistor={{persistor}}> */}
-        <BrowserRouter basename='/react_template'>
+    <BrowserRouter basename='/'>
+      <I18nextProvider i18n={i18n}>
+        <Suspense fallback={<Loader/>}>
           <ThemeProvider theme={theme}>
-            <GlobalStyle/>
+            <GlobalStyle />
             <App />
           </ThemeProvider>
-        </BrowserRouter>
-      {/* </PersistGate> */}
-    {/* </Provider> */}
+        </Suspense>
+      </I18nextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
