@@ -16,7 +16,7 @@ i18next
         fallbackLng: 'he',
         // lng: 'en',
         backend: {
-            loadPath: '/locales/{{lng}}/translation.json'
+            loadPath: '/Green-Garden/locales/{{lng}}/translation.json'
         },
         react: {
             useSuspense: true
