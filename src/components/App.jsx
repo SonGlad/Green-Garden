@@ -1,22 +1,22 @@
 import { Header } from "./Header/Header";
 import { 
   SectionHero, 
-  SectionAbout, 
+  // SectionAbout, 
   // SectionContact, 
-  SectionWorks, 
-  SectionServices 
+  // SectionWorks, 
+  // SectionServices 
 } from "./Section/Section";
-import { StyledApp } from "./App.styled";
+// import { StyledApp } from "./App.styled";
 import { Container } from "./Container/Container";
 import { HeroSection } from "./HeroSection/Hero";
-import { Services } from "./ServicesSection/Services";
-import { About } from "./AboutSection/About";
-import { Works } from "./WorksSection/Works";
+// import { Services } from "./ServicesSection/Services";
+// import { About } from "./AboutSection/About";
+// import { Works } from "./WorksSection/Works";
 // import { Contact } from "./ContactSection/Contac";
-import { Footer } from "./Footer/Footer";
+// import { Footer } from "./Footer/Footer";
 import { useRef, useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
-import { Animation } from "./Animation/Animation";
+// import { Animation } from "./Animation/Animation";
 
 
 
