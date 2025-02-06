@@ -1,0 +1,264 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        61.19343948364258,
+        82.38983917236328,
+        0.5792400240898132
+      ],
+      "min": [
+        -35.47172927856445,
+        -84.74606323242188,
+        -1.4118900299072266
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999165534973145,
+        0.9993677735328674,
+        1.0
+      ],
+      "min": [
+        -0.9999975562095642,
+        -0.9993667006492615,
+        -0.9999993443489075
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 329595,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 27150,
+      "max": [
+        70.58602142333984,
+        82.57842254638672,
+        0.6195799708366394
+      ],
+      "min": [
+        -34.79330825805664,
+        -83.48721313476563,
+        -1.1233899593353271
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1898568,
+      "componentType": 5126,
+      "count": 27150,
+      "max": [
+        0.005040030926465988,
+        0.7077399492263794,
+        1.0
+      ],
+      "min": [
+        -0.9999998211860657,
+        -0.7852228283882141,
+        -0.9999909996986389
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1318380,
+      "componentType": 5125,
+      "count": 129285,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "YouniqueĪdeaStudio (https://sketchfab.com/sinnervoncrawsz)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/palm-leaf-7075afbfe4444606ab9f4984d08e76c4",
+      "title": "PALM LEAF"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1835520,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2224368,
+      "byteOffset": 1835520,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4059888,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Root",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03781118852250225,
+          0.1968202626930848,
+          0.02696726178207102,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.4229166984558106
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "FRUNZA 1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "FRUNZA 1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        -0.29086000000000006,
+        0.9551700000000001,
+        -0.05519000000000001,
+        0.0,
+        -0.7711,
+        -0.19988000000000003,
+        0.6045200000000001,
+        0.0,
+        0.5663900000000001,
+        0.21839000000000003,
+        0.7946700000000001,
+        0.0,
+        4.076250000000001,
+        1.00545,
+        5.903860000000001,
+        1.0
+      ],
+      "name": "Lamp"
+    },
+    {
+      "name": "Lamp"
+    },
+    {
+      "children": [
+        5,
+        6
+      ],
+      "matrix": [
+        -0.0,
+        0.0,
+        -0.015000000000000003,
+        0.0,
+        0.0,
+        0.010000000000000002,
+        0.0,
+        0.0,
+        1.5,
+        0.0,
+        -0.0,
+        0.0,
+        0.0023200000000000004,
+        -0.04340000000000001,
+        -0.33425000000000005,
+        1.0
+      ],
+      "name": "FRUNZA 1"
+    },
+    {
+      "mesh": 0,
+      "name": "FRUNZA 1_0"
+    },
+    {
+      "mesh": 1,
+      "name": "FRUNZA 1_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
