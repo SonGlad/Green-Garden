@@ -1,5 +1,6 @@
 import { HeroStyled } from "./Hero.styled";
 import { useTranslation } from 'react-i18next';
+import { Animation } from "../Animation/Animation";
 
 
 
@@ -28,6 +29,7 @@ export const HeroSection = ({hebrew}) => {
                     <span>{t('header.contactUsText')}</span>  
                 </a>
             </div>
+            <Animation/>
         </HeroStyled>
     )
 };

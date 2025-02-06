@@ -16,6 +16,7 @@ import { Works } from "./WorksSection/Works";
 import { Footer } from "./Footer/Footer";
 import { useRef, useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { Animation } from "./Animation/Animation";
 
 
 
@@ -64,6 +65,7 @@ export const App = () => {
 
   return (
     <>
+    {/* <Animation/> */}
       <Header
         heroSectionRef={heroSectionRef}
         aboutSectionRef={aboutSectionRef}
@@ -87,7 +89,7 @@ export const App = () => {
           />
         </Container>
       </SectionHero>
-      <StyledApp>
+      {/* <StyledApp>
         <span className="left-skew"></span>
         <span className="right-skew"></span>
         <span className="service-logo"></span>
@@ -121,20 +123,20 @@ export const App = () => {
             />
           </Container>
         </SectionWorks>
-        {/* <SectionContact
+        <SectionContact
           propsId={'ContactSection'}
           contactSectionRef ={contactSectionRef }
         >
           <Container>
             <Contact/>
           </Container>
-        </SectionContact> */}
+        </SectionContact>
         <Footer
           propsId={'Footer'}
           footerRef={footerRef}
           hebrew={hebrew}
         />
-      </StyledApp>
+      </StyledApp> */}
     </>
   );
 }
