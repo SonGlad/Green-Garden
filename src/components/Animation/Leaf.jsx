@@ -40,7 +40,7 @@ const FallingLeaf = ({ index, z, speed, model }) => {
 
 export const LeafCanvas = () => {
     const { scene } = useGLTF('/Green-Garden/palm_leaf/scene.gltf');
-    const count = 60; 
+    const count = 10; 
     const depth = 15;
     const easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2));
     
