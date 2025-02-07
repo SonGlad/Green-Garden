@@ -1,6 +1,6 @@
 import { ServicesStyled } from "./Services.styled";
-import SVGBackgroundImage1 from '../../images/images/svg-back1.png';
-import SVGBackgroundImage2 from '../../images/images/svg-back2.png';
+// import SVGBackgroundImage1 from '../../images/images/svg-back1.png';
+// import SVGBackgroundImage2 from '../../images/images/svg-back2.png';
 import CardImageOne from "../../images/images/picture1.jpg";
 import CardImageTwo from "../../images/images/picture2.jpg";
 import CardImageThree from "../../images/images/picture3.jpg";
@@ -30,12 +30,12 @@ export const Services = ({hebrew}) => {
                 <span className="span-after"></span>
             </div>
             <div className="services-svg-background">
-                <span className="services-svg-background-one">
+                {/* <span className="services-svg-background-one">
                     <img className="services-svg-background-one-img" src={SVGBackgroundImage1} alt='background_image' width={744}></img>
                 </span>
                 <span className="services-svg-background-two">
                     <img className="services-svg-background-two-img" src={SVGBackgroundImage2} alt='background_image' width={316}></img>
-                </span>
+                </span> */}
                 <ul className="services-list">
                     <li className="services-items">
                         <div className="service-main-cont">

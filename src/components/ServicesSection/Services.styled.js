@@ -17,11 +17,14 @@ export const ServicesStyled = styled.div`
     }
 
 
-    .services-title-cont{
+    /* .services-title-cont{
        display: flex;
        align-items: center;
        justify-content: center;
        gap: 15px;
+       background-color: ${p => p.theme.color.body_bg_color};
+       width: 100dvw;
+       margin-left: -32px;
 
         & .service-section-title{
             color: ${p => p.theme.color.text_color2};
@@ -63,7 +66,7 @@ export const ServicesStyled = styled.div`
                 z-index: 1;
             }
         }  
-    }
+    } */
 
     .services-svg-background{
         color: ${p => p.theme.color.text_color2};
