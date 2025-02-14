@@ -4,7 +4,8 @@ import {
     AboutSectionStyled, 
     WorksSectionStyled,
     ContactSectionStyled, 
-    SectionStyled, 
+    SectionStyled,
+    PreFooterSectionStyled, 
 } from './Section.styled';
 import { forwardRef } from 'react';
 
@@ -58,6 +59,15 @@ export const Section = ({children}) => {
             {children}
         </SectionStyled>
     );
+};
+
+
+export const PreFooterSection = ({children}) => {
+    return (
+        <PreFooterSectionStyled>
+            {children}
+        </PreFooterSectionStyled>
+    )
 };
 
 

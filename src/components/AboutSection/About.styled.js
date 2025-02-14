@@ -17,68 +17,6 @@ export const AboutStyled = styled.div`
     }
 
 
-    .about-title-cont{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 15px;
-       transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
-       
-       
-       & .about-section-title{
-           color: ${p => p.theme.color.text_color2};
-           font-weight: 500;
-           font-size: 48px;
-           white-space: nowrap;
-           flex-shrink: 0;
-        }
-
-        & .span-before{
-            position: relative;
-            width: 100%;
-
-            @media screen and (min-width: 1280px){
-                max-width: 333px;
-            }
-            
-            &::before{
-                position: absolute;
-                left: 0;
-                content: '';
-                background-color: ${p => p.theme.color.text_color2};
-                width: 100%;
-                height: 1px;
-                z-index: 1;
-            }
-        }
-
-        .span-after{
-            position: relative;
-            width: 100%;
-
-            &::before{
-                position: absolute;
-                left: 0;
-                content: '';
-                background-color: ${p => p.theme.color.text_color2};
-                width: 100%;
-                height: 1px;
-                z-index: 1;
-            }
-        }  
-    }
-
-
-    .about-back-cont{
-        position: absolute;
-
-        & .about-back-svg{
-
-        }
-    }
-
-
-
     .about-main-cont{
         position: relative;
         margin-top: 74px;
@@ -100,6 +38,7 @@ export const AboutStyled = styled.div`
             height: auto;
             border-radius: 50%;
             overflow: hidden;
+            aspect-ratio: 1 / 1;
             box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
                             1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
                             8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
@@ -116,7 +55,8 @@ export const AboutStyled = styled.div`
             
             & .about-img{
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
             }
 
         }
@@ -127,12 +67,18 @@ export const AboutStyled = styled.div`
             position: absolute;
             top: 67%;
             left: 0;
-            background: rgba(20, 37, 21, 0.8);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(4px);
             border-radius: 10px;
             padding: 30px 10px;
             font-weight: 400;
             font-size: 20px;
+            color: ${p => p.theme.color.text_color2};
+            box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
+                            1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
+                            8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
+                            15px 56px 23px 0 rgba(0, 0, 0, 0.01), 
+                            23px 87px 25px 0 rgba(0, 0, 0, 0);
 
 
             @media screen and (min-width: 768px){
@@ -188,37 +134,5 @@ export const AboutStyled = styled.div`
                 margin-bottom: 0;
             }
         }
-
-
     }
-
-    .svg-back-cont{
-
-        @media screen and (max-width: 767px){
-            display: none;
-        }
-
-
-        position: absolute;
-        bottom: 0;
-        right: -5%;
-        z-index: -1;
-
-        width: 80%;
-        max-height: 70%;
-        
-        @media screen and (min-width: 1280px){
-            max-width: 63%;
-            max-height: 86%;
-            right: -3%;
-        }
-
-        
-        & .about-cont-back-svg{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-
 `

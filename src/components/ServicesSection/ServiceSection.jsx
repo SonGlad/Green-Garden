@@ -1,10 +1,10 @@
 import { StyledServiceSection } from "./ServiceSection.styled";
-import Image1 from "../../images/images/picture1.jpg";
-import Image2 from "../../images/images/picture2.jpg";
-import Image3 from "../../images/images/picture3.jpg";
-import Image4 from "../../images/images/picture4.jpg";
-import Image5 from "../../images/images/picture5.jpg";
-import Image6 from "../../images/images/picture6.jpg";
+import Image1 from "../../images/images/picture1.webp";
+import Image2 from "../../images/images/picture2.webp";
+import Image3 from "../../images/images/picture3.webp";
+import Image4 from "../../images/images/picture4.webp";
+import Image5 from "../../images/images/picture5.webp";
+import Image6 from "../../images/images/picture6.webp";
 import {ReactComponent as PictureOneSVG} from "../../images/svg/picture1_svg.svg";
 import {ReactComponent as PictureTwoSVG} from "../../images/svg/picture2_svg.svg";
 import {ReactComponent as PictureThreeSVG} from "../../images/svg/picture3_svg.svg";

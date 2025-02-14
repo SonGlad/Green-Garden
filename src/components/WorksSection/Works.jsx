@@ -1,68 +1,59 @@
 import { WorksStyled } from "./Works.styled";
-import SVGBackgroundImage4 from '../../images/images/svg-back4.png';
 import { useTranslation } from 'react-i18next';
-
+import { useMemo } from "react";
 
 
 export const Works = ({hebrew}) => {
     const { t } = useTranslation();
 
 
+    const data = useMemo(() => [
+        {
+            itemNum: '01',
+            title: t('work.subTitleOne'),
+            description: t('work.textOne'),
+        },
+        {
+            itemNum: '02',
+            title: t('work.subTitleTwo'),
+            description: t('work.textTwo'),
+        },
+        {
+            itemNum: '03',
+            title: t('work.subTitleThree'),
+            description: t('work.textThree'),
+        },
+        {
+            itemNum: '04',
+            title: t('work.subTitleFour'),
+            description: t('work.textFour'),
+        },
+        {
+            itemNum: '05',
+            title: t('work.subTitleFive'),
+            description: t('work.textFive'),
+        },
+        {
+            itemNum: '05',
+            title: t('work.subTitleFive'),
+            description: t('work.textFive'),
+        },
+    ], [t]);
+
 
     return(
         <WorksStyled $hebrew={hebrew}>
-            <div className="work-title-cont">
-                <span className='span-before'></span>
-                <h2 className="work-section-title">{t('work.title')}</h2>
-                <span className="span-after"></span>
-            </div>
             <ul className="work-list">
-                <li className="work-item">
-                    <div className="item-title-cont">
-                        <span className="item-num">01</span>
-                        <h3 className="item-title">{t('work.subTitleOne')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textOne')}</p>
-                </li>
-                <li className="work-item">
-                    <div className="item-title-cont">
-                        <span className="item-num">02</span>
-                        <h3 className="item-title">{t('work.subTitleTwo')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textTwo')}</p>
-                </li>
-                <li className="work-item">
-                    <div className="item-title-cont">
-                        <span className="item-num">03</span>
-                        <h3 className="item-title">{t('work.subTitleThree')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textThree')}</p>
-                </li>
-                <li className="work-item">
-                    <div className="item-title-cont">
-                        <span className="item-num">04</span>
-                        <h3 className="item-title">{t('work.subTitleFour')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textFour')}</p>
-                </li>
-                <li className="work-item hidden">
-                    <div className="item-title-cont">
-                        <span className="item-num">05</span>
-                        <h3 className="item-title">{t('work.subTitleFive')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textFive')}</p>
-                </li>
-                <li className="work-item">
-                    <div className="item-title-cont">
-                        <span className="item-num">05</span>
-                        <h3 className="item-title">{t('work.subTitleFive')}</h3>
-                    </div>
-                    <p className="work-item-text">{t('work.textFive')}</p>
-                </li>
+                {data && data.map(({itemNum, title, description}, index) => (
+                    <li key={index} className="work-item">
+                        <div className="item-title-cont">
+                            <span className="item-num">{itemNum}</span>
+                            <h3 className="item-title">{title}</h3>
+                        </div>
+                        <p className="work-item-text">{description}</p>
+                    </li>
+                ))}
             </ul>
-            <div className="work-back-cont">
-                <img className="services-svg-background-four-img" src={SVGBackgroundImage4} alt='background_image' width={744}></img>
-            </div>
         </WorksStyled>
     );
 };

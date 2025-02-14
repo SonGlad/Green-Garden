@@ -3,63 +3,11 @@ import styled from "styled-components";
 
 export const WorksStyled = styled.div`
     position: relative;
-    padding-bottom: 120px;
     transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
 
 
-    .work-title-cont{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 15px;
-       margin-bottom: 90px;
-       
-       & .work-section-title{
-           color: ${p => p.theme.color.text_color2};
-           font-weight: 500;
-           font-size: 48px;
-           white-space: nowrap;
-           flex-shrink: 0;
-           transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
-        }
-
-        & .span-before{
-            position: relative;
-            width: 100%;
-
-            @media screen and (min-width: 1280px){
-                max-width: 462px;
-            }
-            
-            &::before{
-                position: absolute;
-                left: 0;
-                content: '';
-                background-color: ${p => p.theme.color.text_color2};
-                width: 100%;
-                height: 1px;
-                z-index: 1;
-            }
-        }
-
-        .span-after{
-            position: relative;
-            width: 100%;
-
-            &::before{
-                position: absolute;
-                left: 0;
-                content: '';
-                background-color: ${p => p.theme.color.text_color2};
-                width: 100%;
-                height: 1px;
-                z-index: 1;
-            }
-        }  
-    }
-
     .work-list{
-        color: ${p => p.theme.color.text_color1};
+        color: ${p => p.theme.color.text_color2};
         width: 100%;
         transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
 
@@ -80,6 +28,15 @@ export const WorksStyled = styled.div`
             margin-bottom: 0;
         }
 
+        & li:nth-last-child(2){
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+
+            visibility: hidden;
+            opacity: 0;
+        }
+
         @media screen and (min-width: 768px){
             display: flex;
             align-items: center;
@@ -95,13 +52,19 @@ export const WorksStyled = styled.div`
 
 
         & .work-item{
-            background-color: ${p => p.theme.color.text_color2};
+            background: rgba(255, 255, 255, 0.8);;
+            backdrop-filter: blur(4px);
             border-radius: 15px;
             padding: 32px;
             max-width: 491px;
             margin-left: auto;
             margin-right: auto;
             min-height: 216px;
+            box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
+                            1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
+                            8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
+                            15px 56px 23px 0 rgba(0, 0, 0, 0.01), 
+                            23px 87px 25px 0 rgba(0, 0, 0, 0);
 
             @media screen and (min-width: 768px){
                 margin-left: 0;
@@ -112,8 +75,7 @@ export const WorksStyled = styled.div`
             @media screen and (min-width: 1440px){
                 max-width: none;
                 width: 40%;
-            } 
-            
+            }
             
             & .item-title-cont{
                 display: flex;
@@ -153,40 +115,15 @@ export const WorksStyled = styled.div`
             }
         }
 
-        & .hidden{
+        /* & .hidden{
             @media screen and (max-width: 767px){
                 display: none;
             }
 
             visibility: hidden;
             opacity: 0;
-        }
+        } */
     }
 
 
-
-
-    & .work-back-cont{
-        @media screen and (max-width: 767px){
-            display: none;
-        }
-
-        position: absolute;
-        height: auto;
-        z-index: -1;
-        left: -3%;
-        bottom: -19%;
-
-        @media screen and (min-width: 1440px){
-            width: 45%;
-            max-width: 940px;
-        }
-
-
-        & .services-svg-background-four-img{
-            width: 100%;
-            height: auto;   
-        }
-
-    }
 `

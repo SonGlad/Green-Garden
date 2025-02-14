@@ -31,3 +31,9 @@ export const SectionStyled = styled.section`
     width: 100%;
 `
 
+export const PreFooterSectionStyled = styled.section`
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, #FCFFF9 0%, #FCFFF9 10%, rgba(0, 0, 0, 0) 100%);
+`
+

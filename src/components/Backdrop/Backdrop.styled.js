@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeroBackgroundImage from '../../images/images/background.jpg';
+import HeroBackgroundImage from '../../images/images/background.webp';
 
 
 export const StyledBackdrop = styled.div`

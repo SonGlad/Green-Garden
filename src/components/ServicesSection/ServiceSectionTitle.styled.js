@@ -126,8 +126,8 @@ export const StyledServiceSectionTitle = styled.div`
         position: absolute;
         top: 0%;
         left: 50%;
-        width: 195px;
-        height: 135px;
+        width: 100px;
+        height: 70px;
         z-index: 4;
         left: 50%;
         transform: translate(-53%, -90%);
@@ -135,6 +135,17 @@ export const StyledServiceSectionTitle = styled.div`
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+
+        @media screen and (min-width: 780px){
+            width: 140px;
+            height: 100px;
+        }
+
+        @media screen and (min-width: 1280px){
+            width: 195px;
+            height: 135px;
+        }
     }
 
 `
