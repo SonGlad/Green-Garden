@@ -34,8 +34,7 @@ export const FallingLeaf = ({ index, z, speed, model }) => {
         }
     });
 
-
     return (
-        <primitive ref={ref} object={model} scale={1}/>
+        <primitive ref={ref} object={model} scale={1} />
     );
 };

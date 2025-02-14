@@ -13,7 +13,7 @@ export const StyledBackdrop = styled.div`
     width: 100%;
     min-height: calc(100dvh - 88px);
     margin-top: 88px;
-    transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
+    transform: scaleX(${p => (p.$hebrew ? "1" : "-1")});
 
 
     @media screen and (min-width: 1280px){
@@ -59,5 +59,6 @@ export const StyledBackdrop = styled.div`
             linear-gradient(15deg, rgba(20, 37, 21, 0) 0%, #142515 97.5%), 
             linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, #142515 80.45%);
         pointer-events: none;
+        transform: scaleX(-1);
     }
 `

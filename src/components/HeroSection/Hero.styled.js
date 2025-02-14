@@ -67,7 +67,7 @@ export const HeroStyled = styled.div`
         }
 
         @media screen and (min-width: 1280px){
-            font-size: 32px;
+            font-size: 54px;
             text-align: ${p => p.$hebrew ? "right" : "left"};
         }
     }

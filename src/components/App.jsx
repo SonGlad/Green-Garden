@@ -13,7 +13,6 @@ import { StyledApp } from "./App.styled";
 import { HeroSection } from "./HeroSection/Hero";
 import { ServiceSectionTitle } from "./ServicesSection/ServiceSectionTitle";
 import { ServiceSection } from "./ServicesSection/ServiceSection";
-// import { Services } from "./ServicesSection/Services";
 // import { About } from "./AboutSection/About";
 // import { Works } from "./WorksSection/Works";
 // import { Contact } from "./ContactSection/Contac";
@@ -37,7 +36,7 @@ export const App = () => {
   const [langValue, setLangValue] = useState(initialLang);
   const [langToShow, setLangToShow] = useState(initialLang);
   const [hebrew, setHebrew] = useState(false);
-  console.log(hebrew);
+
   
   const langArray = [
     {'lang': 'EN'},
@@ -106,16 +105,6 @@ export const App = () => {
             hebrew={hebrew}
           />
         </SectionServices>
-        {/* <SectionServices
-          propsId={'ServiceSection'}
-          serviceskSectionRef={serviceskSectionRef}
-        >
-          <Container>
-            <Services
-              hebrew={hebrew}
-            />
-          </Container>
-        </SectionServices> */}
         {/* <SectionAbout
           propsId={'AboutSection'}
           aboutSectionRef={aboutSectionRef}

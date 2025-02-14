@@ -9,7 +9,7 @@ import { FallingLeaf } from './FallingLeaf';
 export const LeafCanvas = () => {
     const { scene } = useGLTF('/Green-Garden/palm_leaf/scene.gltf');
     const count = 60; 
-    const depth = 15;
+    const depth = 55;
     const easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2));
     
 

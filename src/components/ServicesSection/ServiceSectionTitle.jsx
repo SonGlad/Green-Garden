@@ -9,7 +9,7 @@ export const ServiceSectionTitle = ({hebrew}) => {
     return(
         <StyledServiceSectionTitle $hebrew={hebrew}>
             <span className='span-before'></span>
-            <h2 className="service-section-title">{t('services.title')}</h2>
+            <h2 className="service-section-title">{t('services.sectionTitle')}</h2>
             <span className="span-after"></span>
             <span className="left-skew"></span>
             <span className="right-skew"></span>

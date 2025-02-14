@@ -92,6 +92,7 @@ export const StyledServiceSectionTitle = styled.div`
 
         @media screen and (min-width: 1920px){
             height: 125px;
+            transform: skewY(5.5deg);
         }
     }
 
@@ -117,6 +118,7 @@ export const StyledServiceSectionTitle = styled.div`
 
         @media screen and (min-width: 1920px){
             height: 125px;
+            transform: skewY(-5.5deg);
         }
     }
 
