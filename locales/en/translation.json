@@ -14,14 +14,20 @@
         "name": "View of the Gardens",
         "slogan":"Professional care for every garden"
     },
-    "services":{
-        "title": "Services",
-        "descriptionOne":"Landscape design, design and creation of gardens",
-        "descriptionTwo":"Regular maintenance (pruning, planting, cleaning, restoration).",
-        "descriptionThree":"Renewal of existing green areas",
-        "descriptionFour":"Installation of irrigation systems and fertilizer systems",
-        "descriptionFive":"Vertical gardens",
-        "descriptionSix":"Consultation on landscaping find or make icons for these items for a block on the service website"
+    "services": {
+        "sectionTitle": "Services",
+        "subTitleOne": "Landscape Design, Planning, and Garden Creation",
+        "descriptionOne": "We create gardens that harmoniously blend with the environment and your preferences. Our team of professionals develops personalized projects, considering terrain, soil, and climate conditions. We work with various styles—from classic and modern to natural and Japanese—creating cozy and functional spaces for relaxation and enjoying nature.",
+        "subTitleTwo": "Regular Maintenance (Pruning, Planting, Cleaning, Restoration)",
+        "descriptionTwo": "Green spaces require care, and we provide a full range of maintenance services. We perform seasonal pruning of trees and shrubs, plant new greenery, remove leaves and weeds, and restore lawns and flowerbeds. Regular maintenance not only preserves the garden’s aesthetic appeal but also prolongs the life of plants.",
+        "subTitleThree": "Renovation of Existing Green Areas",
+        "descriptionThree": "If your garden has lost its former beauty or needs changes, we will help breathe new life into it. We conduct plant assessments, replace outdated elements, add new compositions, and adapt the design to your current needs. Renovation may include upgrading pathways, water features, lighting, and seating areas.",
+        "subTitleFour": "Irrigation and Fertilization System Installation",
+        "descriptionFour": "For healthy plant growth, regular watering and nourishment are essential. We install modern automatic irrigation systems that provide optimal moisture levels while saving you time and resources. Our solutions include drip irrigation, sprinkler systems, and programmable controllers. We also develop customized fertilization programs to maintain soil fertility and plant health.",
+        "subTitleFive": "Vertical Gardens",
+        "descriptionFive": "Green walls and living partitions are not just about aesthetics—they also contribute to a healthier environment. We create vertical gardens for homes, offices, restaurants, and public spaces. These installations purify the air, create a comfortable microclimate, and save space. We offer both natural living walls and stabilized moss compositions that require no maintenance.",
+        "subTitleSix": "Landscape Consultation",
+        "descriptionSix": "If you want to create a unique landscape project but don’t know where to start, our specialists will guide you through every step. We analyze the site, select optimal solutions, help with plant and material choices, develop a landscaping concept, and provide recommendations for garden care."
     },
     "about":{
         "title": "About Us",
