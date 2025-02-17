@@ -47,6 +47,53 @@ export const NavLinksStyled = styled.nav`
             ${p => (p.$hebrew ? "margin-right: auto;" : "margin-left: auto;")};
         }
 
+        & li:first-child{
+
+            & .services-list{
+                @media screen and (max-width: 1279px){
+                    display: none;
+                }
+                background: rgba(255, 255, 255, 0.96);
+                width: ${p => p.$hebrew ? "230px" : "260px"};
+                height: auto;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 5px);
+                font-size: 16px;
+                border-radius: 15px;
+                display: none;
+                overflow: hidden;
+                box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
+                            1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
+                            8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
+                            15px 56px 23px 0 rgba(0, 0, 0, 0.01), 
+                            23px 87px 25px 0 rgba(0, 0, 0, 0);
+                
+                & li{
+                    text-align: ${p => p.$hebrew ? "right" : "left"};
+                    direction: ${p => (p.$hebrew ? "rtl" : "ltr")};
+                    unicode-bidi: ${p => (p.$hebrew ? "bidi-override" : "normal")};
+                    cursor: pointer;
+                    padding: 10px;
+                    background-color: transparent;
+                    color: ${p => p.theme.color.text_color2};
+                    transition: color ${(p) => p.theme.transition.main_transition},
+                                background-color ${(p) => p.theme.transition.main_transition};
+                }
+
+                & li:hover{
+                    background: ${p => p.theme.color.text_color2};
+                    color: ${p => p.theme.color.hover_color};
+                }
+            }
+        }
+
+        & li:first-child:hover .services-list{
+            display: block;
+        }
+
+
         & .navigation-item{
             width: 100%;
             text-align: center;
@@ -59,7 +106,7 @@ export const NavLinksStyled = styled.nav`
             }
 
             
-            &:hover{
+            &:hover span{
                 color: ${(p) => p.theme.color.hover_color};
             }
 

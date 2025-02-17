@@ -264,6 +264,11 @@ export const StyledServiceSection = styled.div`
         opacity: 0;
         visibility: hidden;
         padding: 0 10px;
+        min-height: clamp(328px, calc(654px - (654 - 328) * ((100vw - 320px) / (768 - 320))), 654px);
+
+        @media screen and (min-width: 768px){
+            min-height: clamp(240px, calc(328px - (328 - 240) * ((100vw - 768px) / (1280 - 768))), 328px);  
+        }
     }
 
     & .service-tex-cont{
@@ -356,6 +361,44 @@ export const StyledServiceSection = styled.div`
         }
 
         .text{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: opacity 0.5s ease-in-out,
+                        visibility 0.5s ease-in-out,
+                        transform 0.5s ease-in-out;
+        }
+
+        & a{
+            margin: 30px auto 0px auto;
+            text-align: center;
+            width: fit-content;
+            display: block;
+            font-weight: 500;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid ${(p) => p.theme.color.logo_green_color};
+            color: ${(p) => p.theme.color.text_color2};
+            background-color: ${(p) => p.theme.color.body_bg_color};
+            font-size: 20px;
+            transition: color ${p => p.theme.transition.main_transition},
+                        background-color ${p => p.theme.transition.main_transition},
+                        outline ${p => p.theme.transition.main_transition};
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100%);
+
+            &:hover{
+                background-color: ${(props) => props.theme.color.hover_color};
+                border: 1px solid ${(p) => p.theme.color.hover_color};  
+            }
+
+            @media screen and (min-width: 1280px){
+                margin: 30px 0px 0px 0px;
+            }
+        }
+
+        .order-link{
             opacity: 1;
             visibility: visible;
             transform: translateY(0);

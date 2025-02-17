@@ -2,17 +2,12 @@ import styled from "styled-components";
 
 
 export const HeaderStyled = styled.header`
-    background-color: ${(props) => props.theme.color.header_bg_color};
     position: fixed;
     z-index: 100;
     width: 100%;
     transition: all ${(p) => p.theme.transition.main_transition};
-
-    ${(props) => props.$isScrolled &&
-    `
-      background-color: #142515ba;
-      backdrop-filter: blur(10px);
-    `}
+    background-color: ${p => p.$isScrolled ? "#142515ba" : "#142515"};
+    backdrop-filter: ${p => p.$isScrolled ? "blur(10px)" : "blur(0px)"};
 
 
     .header-container{

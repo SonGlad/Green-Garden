@@ -18,7 +18,7 @@ import { SwiperDiv } from "./Swiper";
 
 
 
-export const ServiceSection = ({hebrew}) => {
+export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setNavigationIndex}) => {
     const { t } = useTranslation();
     const [activeIndex, setActiveIndex] = useState(0);
     const [prevIndex, setPrevIndex] = useState(null);
@@ -31,6 +31,9 @@ export const ServiceSection = ({hebrew}) => {
         description: t('services.descriptionSix'),
         image: Image6,
         svg: PictureSixSVG,
+        phone: t('header.contactUsNumber'),
+        baseMessage: t('services.orderMessage'),
+        orderLink: t('services.orderLink'),
     });
     const swiperRef = useRef(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -68,36 +71,54 @@ export const ServiceSection = ({hebrew}) => {
             description: t('services.descriptionOne'),
             image: Image1,
             svg: PictureOneSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
         {
             title: t('services.subTitleTwo'),
             description: t('services.descriptionTwo'),
             image: Image2,
             svg: PictureTwoSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
         {
             title: t('services.subTitleThree'),
             description: t('services.descriptionThree'),
             image: Image3,
             svg: PictureThreeSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
         {
             title: t('services.subTitleFour'),
             description: t('services.descriptionFour'),
             image: Image4,
             svg: PictureFourSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
         {
             title: t('services.subTitleFive'),
             description: t('services.descriptionFive'),
             image:Image5,
             svg: PictureFiveSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
         {
             title: t('services.subTitleSix'),
             description: t('services.descriptionSix'),
             image: Image6,
             svg: PictureSixSVG,
+            phone: t('header.contactUsNumber'),
+            baseMessage: t('services.orderMessage'),
+            orderLink: t('services.orderLink'),
         },
     ], [t]);
 
@@ -157,13 +178,21 @@ export const ServiceSection = ({hebrew}) => {
     };
 
 
+ 
     return(
         <StyledServiceSection $hebrew={hebrew} style={{ "--speedvalue": `${speedValue}ms`}}>
             {render && 
                 <div className="service-tex-cont mobile">
                     <span className={animation ? "span" : ""}></span>
                     <h3 className={animation ? "title" : ""}>{fixedBackgroundData.title}</h3>
-                    <p className={animation ? "text" : ""}>{fixedBackgroundData.description}</p> 
+                    <p className={animation ? "text" : ""}>{fixedBackgroundData.description}</p>
+                    <a className={animation ? "order-link" : ""} 
+                        href={`https://wa.me/${fixedBackgroundData.phone}?text=${encodeURIComponent(fixedBackgroundData.baseMessage + ' ' + fixedBackgroundData.title)}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        {fixedBackgroundData.orderLink}
+                    </a> 
                 </div>
             }
             <div className={`background-active-animated ${toggleActiveStyle()}`} style={{
@@ -181,7 +210,14 @@ export const ServiceSection = ({hebrew}) => {
                 <div className="service-tex-cont">
                     <span className={animation ? "span" : ""}></span>
                     <h3 className={animation ? "title" : ""}>{fixedBackgroundData.title}</h3>
-                    <p className={animation ? "text" : ""}>{fixedBackgroundData.description}</p> 
+                    <p className={animation ? "text" : ""}>{fixedBackgroundData.description}</p>
+                    <a className={animation ? "order-link" : ""} 
+                        href={`https://wa.me/${fixedBackgroundData.phone}?text=${encodeURIComponent(fixedBackgroundData.baseMessage + ' ' + fixedBackgroundData.title)}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        {fixedBackgroundData.orderLink}
+                    </a>  
                 </div>
             </div>
             <SwiperDiv 
@@ -191,6 +227,9 @@ export const ServiceSection = ({hebrew}) => {
                 hebrew={hebrew}
                 delayValue={delayValue}
                 swiperRef={swiperRef}
+                navigateToIndex={navigateToIndex}
+                isNavigationIndex={isNavigationIndex}
+                setNavigationIndex={setNavigationIndex}
             />
             <div className="progress-bar">
                 <div className="button-block">

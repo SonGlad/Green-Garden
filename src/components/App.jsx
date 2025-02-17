@@ -39,7 +39,10 @@ export const App = () => {
   const [langValue, setLangValue] = useState(initialLang);
   const [langToShow, setLangToShow] = useState(initialLang);
   const [hebrew, setHebrew] = useState(false);
+  const [navigateToIndex, setNavigateToIndex] = useState(null);
+  const [isNavigationIndex, setNavigationIndex]= useState(false);
 
+ 
   
   const langArray = [
     {'lang': 'EN'},
@@ -72,7 +75,6 @@ export const App = () => {
     <>
       <Backdrop hebrew={hebrew}/>
       <Header
-        heroSectionRef={heroSectionRef}
         aboutSectionRef={aboutSectionRef}
         serviceskSectionRef={serviceskSectionRef}
         footerRef={footerRef}
@@ -83,6 +85,8 @@ export const App = () => {
         setLangMenu={setLangMenu}
         choseLang={choseLang}
         hebrew={hebrew}
+        setNavigateToIndex={setNavigateToIndex}
+        setNavigationIndex={setNavigationIndex}
       />
       <StyledApp>
         <SectionHero 
@@ -100,7 +104,12 @@ export const App = () => {
           propsId={'ServiceSection'}
           serviceskSectionRef={serviceskSectionRef}
         >
-          <ServiceSection hebrew={hebrew}/>
+          <ServiceSection 
+            hebrew={hebrew}
+            navigateToIndex={navigateToIndex}
+            isNavigationIndex={isNavigationIndex}
+            setNavigationIndex={setNavigationIndex}
+          />
         </SectionServices>
         <Section>
           <AboutSectionTitle hebrew={hebrew}/>

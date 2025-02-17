@@ -14,7 +14,6 @@ import { useTranslation } from 'react-i18next';
 
 
 export const Header = forwardRef(({
-    heroSectionRef, 
     serviceskSectionRef, 
     aboutSectionRef, 
     workSectionRef,
@@ -24,7 +23,9 @@ export const Header = forwardRef(({
     langMenu,
     setLangMenu,
     choseLang,
-    hebrew
+    hebrew,
+    setNavigationIndex,
+    setNavigateToIndex,
     }, ref) => {
     const [isMobMenuActive, setMobMenuActive] = useState(false);
     const langCont = useRef(null);
@@ -115,6 +116,8 @@ export const Header = forwardRef(({
                             workSectionRef={workSectionRef}
                             footerRef={footerRef}
                             hebrew={hebrew}
+                            setNavigateToIndex={setNavigateToIndex}
+                            setNavigationIndex={setNavigationIndex}
                         />
                     </div>
                     <div className="lang-cont" ref={langCont}>
@@ -157,10 +160,6 @@ export const Header = forwardRef(({
                             </button>
                             <NavLinks
                                 setMobileMenuActive={setMobileMenuActive}
-                                serviceskSectionRef={serviceskSectionRef}
-                                aboutSectionRef={aboutSectionRef}
-                                workSectionRef={workSectionRef}
-                                footerRef={footerRef}
                                 hebrew={hebrew}
                             />
                             <p className="menu-description">{t('header.description')}</p>

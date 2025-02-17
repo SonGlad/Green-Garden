@@ -115,15 +115,6 @@ export const WorksStyled = styled.div`
                 } 
             }
         }
-
-        /* & .hidden{
-            @media screen and (max-width: 767px){
-                display: none;
-            }
-
-            visibility: hidden;
-            opacity: 0;
-        } */
     }
 
 

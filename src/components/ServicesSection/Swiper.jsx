@@ -7,10 +7,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-export const SwiperDiv = forwardRef(({data, setActiveIndex, hebrew, prevIndex, delayValue, swiperRef}, ref) => {
+export const SwiperDiv = forwardRef(({
+    data, 
+    setActiveIndex, 
+    hebrew, 
+    prevIndex, 
+    delayValue, 
+    swiperRef,
+    navigateToIndex, 
+    isNavigationIndex, 
+    setNavigationIndex,
+}, ref) => {
     const elementRefs = useRef([]);
     const [isClickable, setIsClickable] = useState(true);
-  
+ 
    
     // const pagination = {
     //     clickable: true,
@@ -103,6 +113,26 @@ export const SwiperDiv = forwardRef(({data, setActiveIndex, hebrew, prevIndex, d
             }
         }
     };
+
+
+    useEffect(() => {
+        if (isNavigationIndex) {
+            if (swiperRef.current) {
+                const swiperInstance = swiperRef.current.swiper;
+    
+                if (swiperInstance) {
+                    setTimeout(() => {
+                        if(navigateToIndex === data.length - 1){
+                            swiperInstance.slideToLoop(0);
+                        } else {
+                            swiperInstance.slideToLoop(navigateToIndex+ 1);
+                        }
+                    }, 50);
+                }
+            }
+            setNavigationIndex(false);
+        }
+    }, [data.length, isNavigationIndex, navigateToIndex, setNavigationIndex, swiperRef]);
 
 
 

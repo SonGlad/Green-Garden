@@ -1,20 +1,45 @@
 import { NavLinksStyled } from "./NavLink.styled";
-import { forwardRef } from "react";
+import { useMemo } from "react";
 import { ContactLink } from "../ContactLink/ContactLink";
 import { ReactComponent as PhoneIcon} from "../../../images/svg/phone.svg";
 import ScrollIntoView from 'react-scroll-into-view';
 import { useTranslation } from 'react-i18next';
 
 
-export const NavLinks = forwardRef(({
-    setMobileMenuActive, 
-    aboutSectionRef, 
-    serviceskSectionRef, 
-    contactSectionRef, 
-    workSectionRef,
-    hebrew
+export const NavLinks = ({
+    setMobileMenuActive,
+    hebrew,
+    setNavigateToIndex,
+    setNavigationIndex
     }, ref) => {
     const { t } = useTranslation();
+
+    const servicesData = useMemo(() => [
+        {
+            serviceTitle: t('services.subTitleOne'),
+        },
+        {
+            serviceTitle: t('services.subTitleTwo'),
+        },
+        {
+            serviceTitle: t('services.subTitleThree'),
+        },
+        {
+            serviceTitle: t('services.subTitleFour'),
+        },
+        {
+            serviceTitle: t('services.subTitleFive'),
+        },
+        {
+            serviceTitle: t('services.subTitleSix'),
+        },
+    ], [t]);
+
+
+    const applynavigationIndex = ((index) => {
+        setNavigateToIndex(index);
+        setNavigationIndex(true);
+    });
 
 
     return (
@@ -24,6 +49,15 @@ export const NavLinks = forwardRef(({
                     <ScrollIntoView selector='#ServiceSection' className="nav-link" onClick={setMobileMenuActive}>
                         <span>{t('header.services')}</span>
                     </ScrollIntoView>
+                    <ul className="services-list">
+                        {servicesData && servicesData.map(({serviceTitle}, index) => (
+                            <li key={index} onClick={() => applynavigationIndex(index)}>
+                                <ScrollIntoView selector='#ServiceSection' alignToTop={true}>
+                                    <p>{serviceTitle}</p>
+                                </ScrollIntoView>
+                            </li>
+                        ))}
+                    </ul>
                 </li>
                 <li className="navigation-item">
                     <ScrollIntoView selector='#AboutSection' className="nav-link" onClick={setMobileMenuActive}>
@@ -56,4 +90,4 @@ export const NavLinks = forwardRef(({
             </address>
         </NavLinksStyled>
     );
-});
+};
