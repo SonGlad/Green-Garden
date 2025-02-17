@@ -19,7 +19,7 @@ export const AboutSectionTitleStyled = styled.div`
     }
 
     @media screen and (min-width: 1280px){
-        padding: 90px 34px 120px 34px;
+        padding: 60px 34px;
     }
 
     & .about-section-title{
@@ -28,6 +28,7 @@ export const AboutSectionTitleStyled = styled.div`
         font-size: 48px;
         white-space: nowrap;
         flex-shrink: 0;
+        transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
     }
 
     & .span-before{

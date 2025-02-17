@@ -19,7 +19,7 @@ export const WorkSectionTitleStyled = styled.div`
     }
 
     @media screen and (min-width: 1280px){
-        padding: 90px 34px 120px 34px;
+        padding: 60px 34px;
     }
 
     & .work-section-title{

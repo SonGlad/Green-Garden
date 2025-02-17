@@ -10,6 +10,7 @@ export const WorksStyled = styled.div`
         color: ${p => p.theme.color.text_color2};
         width: 100%;
         transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
+        padding: 74px 0;
 
 
         @media screen and (min-width: 768px){
