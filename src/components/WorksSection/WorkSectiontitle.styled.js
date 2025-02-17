@@ -25,10 +25,14 @@ export const WorkSectionTitleStyled = styled.div`
     & .work-section-title{
         color: ${p => p.theme.color.text_color2};
         font-weight: 500;
-        font-size: 48px;
+        font-size: 36px;
         white-space: nowrap;
         flex-shrink: 0;
         transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
+
+        @media screen and (min-width: 768px){
+            font-size: 48px;
+        }
     }
 
     & .span-before{

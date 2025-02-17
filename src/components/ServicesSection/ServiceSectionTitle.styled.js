@@ -28,10 +28,14 @@ export const StyledServiceSectionTitle = styled.div`
     & .service-section-title{
         color: ${p => p.theme.color.text_color2};
         font-weight: 500;
-        font-size: 48px;
+        font-size: 36px;
         transform: scaleX(${p => (p.$hebrew ? "-1" : "1")});
         position: relative;
         z-index: 6;
+
+        @media screen and (min-width: 768px){
+            font-size: 48px;
+        }
     }
 
     & .span-before{
