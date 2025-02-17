@@ -27,7 +27,9 @@
         "subTitleFive": "Vertical Gardens",
         "descriptionFive": "Green walls and living partitions are not just about aesthetics—they also contribute to a healthier environment. We create vertical gardens for homes, offices, restaurants, and public spaces. These installations purify the air, create a comfortable microclimate, and save space. We offer both natural living walls and stabilized moss compositions that require no maintenance.",
         "subTitleSix": "Landscape Consultation",
-        "descriptionSix": "If you want to create a unique landscape project but don’t know where to start, our specialists will guide you through every step. We analyze the site, select optimal solutions, help with plant and material choices, develop a landscaping concept, and provide recommendations for garden care."
+        "descriptionSix": "If you want to create a unique landscape project but don’t know where to start, our specialists will guide you through every step. We analyze the site, select optimal solutions, help with plant and material choices, develop a landscaping concept, and provide recommendations for garden care.",
+        "orderMessage": "Hello! I would like to order the following service:",
+        "orderLink": "Order Service"
     },
     "about":{
         "title": "About Us",
