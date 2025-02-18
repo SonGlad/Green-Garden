@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Green-Garden/static/css/main.7aa04116.css",
-    "main.js": "/Green-Garden/static/js/main.6edcd8fa.js",
+    "main.js": "/Green-Garden/static/js/main.8f98c3f5.js",
     "static/js/255.a601c381.chunk.js": "/Green-Garden/static/js/255.a601c381.chunk.js",
     "static/media/picture3.webp": "/Green-Garden/static/media/picture3.c9b2150e20f4946f5a7c.webp",
     "static/media/background.webp": "/Green-Garden/static/media/background.9b2d9bcd59242fa3b81b.webp",
@@ -19,6 +19,7 @@
     "static/media/picture2_svg.svg": "/Green-Garden/static/media/picture2_svg.6bedad8435173277856e3003a221ec07.svg",
     "static/media/picture5_svg.svg": "/Green-Garden/static/media/picture5_svg.c4ca44d318a7953e1aeaa3613bbbdd16.svg",
     "static/media/phone.svg": "/Green-Garden/static/media/phone.e2a149fd7192f16303909e13c08d58a2.svg",
+    "static/media/whatsApp.svg": "/Green-Garden/static/media/whatsApp.74e22146849e9d492b73d305f8a40329.svg",
     "index.html": "/Green-Garden/index.html",
     "static/media/picture3_svg.svg": "/Green-Garden/static/media/picture3_svg.00df01c9bdfded7f19c28f2e589a3f47.svg",
     "static/media/picture4_svg.svg": "/Green-Garden/static/media/picture4_svg.168d2f8871498abb33d583e3b7976077.svg",
@@ -26,11 +27,11 @@
     "static/media/close.svg": "/Green-Garden/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
     "static/media/burger.svg": "/Green-Garden/static/media/burger.fcd5f642cf7711d65bdfd48c01690f8b.svg",
     "main.7aa04116.css.map": "/Green-Garden/static/css/main.7aa04116.css.map",
-    "main.6edcd8fa.js.map": "/Green-Garden/static/js/main.6edcd8fa.js.map",
+    "main.8f98c3f5.js.map": "/Green-Garden/static/js/main.8f98c3f5.js.map",
     "255.a601c381.chunk.js.map": "/Green-Garden/static/js/255.a601c381.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aa04116.css",
-    "static/js/main.6edcd8fa.js"
+    "static/js/main.8f98c3f5.js"
   ]
 }
