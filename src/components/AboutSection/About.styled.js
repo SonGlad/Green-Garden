@@ -39,6 +39,10 @@ export const AboutStyled = styled.div`
             border-radius: 50%;
             overflow: hidden;
             aspect-ratio: 1 / 1;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: transform 1s ease,
+                        opacity 1s ease;
             box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
                             1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
                             8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
@@ -61,6 +65,11 @@ export const AboutStyled = styled.div`
 
         }
 
+        & .active-image-cont{
+            opacity: 1;
+            transform: translateX(0);
+        }
+
      
         & .about-text-list{
             width: 100%;
@@ -74,6 +83,10 @@ export const AboutStyled = styled.div`
             font-weight: 400;
             font-size: 20px;
             color: ${p => p.theme.color.text_color2};
+            opacity: 0;
+            transform: translateX(100%);
+            transition: transform 1s ease,
+                        opacity 1s ease;
             box-shadow: 4px 14px 14px 0 rgba(0, 0, 0, 0.09), 
                             1px 3px 8px 0 rgba(0, 0, 0, 0.1), 
                             8px 31px 19px 0 rgba(0, 0, 0, 0.05), 
@@ -133,6 +146,12 @@ export const AboutStyled = styled.div`
             & li:last-child{
                 margin-bottom: 0;
             }
+        }
+
+
+        & .active-text-list{
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 `

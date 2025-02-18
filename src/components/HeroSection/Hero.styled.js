@@ -15,11 +15,7 @@ export const HeroStyled = styled.div`
         align-items: flex-start;
     }
 
-
-
     .content-cont{
-        /* backdrop-filter: blur(4px);
-        background-color: #e7ffcb3b; */
         border-radius: 30px;
         padding: 43px 24px;
         width: 95%;
@@ -46,6 +42,10 @@ export const HeroStyled = styled.div`
         font-weight: 600;
         font-size: 48px;
         margin-bottom: 20px;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 1s ease,
+                        opacity 1s ease;
 
         @media screen and (min-width: 780px){
             font-size: 56px;
@@ -54,13 +54,33 @@ export const HeroStyled = styled.div`
         @media screen and (min-width: 1280px){
             text-align: ${p => p.$hebrew ? "right" : "left"};
             font-size: 64px;
+            transform: translateX(${p => p.$hebrew ? "50%" : "-50%"});
+            opacity: 0;
+            transition: transform 1s ease,
+                        opacity 1s ease;
         }
     }
+
+    .activ-title{
+        opacity: 1;
+        transform: scale(1);
+
+
+        @media screen and (min-width: 1280px){
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
 
     .sub-title{
         font-weight: 400;
         font-size: 20px;
         text-align: center;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 1s ease,
+                    opacity 1s ease;
 
         @media screen and (min-width: 780px){
             font-size: 28px;
@@ -69,6 +89,21 @@ export const HeroStyled = styled.div`
         @media screen and (min-width: 1280px){
             font-size: 54px;
             text-align: ${p => p.$hebrew ? "right" : "left"};
+            transform: translateX(${p => p.$hebrew ? "50%" : "-50%"});
+            opacity: 0;
+            transition: transform 1s ease,
+                        opacity 1s ease;
+        }
+    }
+
+    .active-sub-title{
+        opacity: 1;
+        transform: scale(1);
+
+
+        @media screen and (min-width: 1280px){
+            transform: translateX(0%);
+            opacity: 1;
         }
     }
 
@@ -104,9 +139,13 @@ export const HeroStyled = styled.div`
         font-weight: 500;
         font-size: 20px;
         line-height: 14px;
+        opacity: 0;
+        transform: scale(0);
         transition: color ${p => p.theme.transition.main_transition},
                     background-color ${p => p.theme.transition.main_transition},
-                    outline ${p => p.theme.transition.main_transition};
+                    outline ${p => p.theme.transition.main_transition},
+                    transform 1s ease,
+                    opacity 1s ease;
 
         @media screen and (min-width: 768px){
             text-align: center;
@@ -118,11 +157,23 @@ export const HeroStyled = styled.div`
             font-weight: 500;
             padding: 12px 90px;
             border-radius: 30px;
+            transform: translateX(${p => p.$hebrew ? "50%" : "-50%"});
         }  
 
         &:hover{
             background-color: ${(props) => props.theme.color.hover_color};
             border: 1px solid ${(p) => p.theme.color.hover_color};  
+        }
+    }
+
+    .active-hero-link{
+        opacity: 1;
+        transform: scale(1);
+
+
+        @media screen and (min-width: 1280px){
+            transform: translateX(0%);
+            opacity: 1;
         }
     }
 

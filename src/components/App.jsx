@@ -18,6 +18,7 @@ import { AboutSectionTitle } from "./AboutSection/AboutSectionTitle";
 import { About } from "./AboutSection/About";
 import { WorkSectionTitle } from "./WorksSection/WorkSectiontitle";
 import { Works } from "./WorksSection/Works";
+import { ContactButton } from "./ContactButton/ContactButton";
 // import { Contact } from "./ContactSection/Contac";
 import { Footer } from "./Footer/Footer";
 import { useRef, useEffect, useState } from "react";
@@ -150,6 +151,7 @@ export const App = () => {
           hebrew={hebrew}
         />
       </StyledApp>
+      <ContactButton hebrew={hebrew}/>
     </>
   );
 }

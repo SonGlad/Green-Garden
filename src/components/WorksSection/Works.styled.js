@@ -19,10 +19,21 @@ export const WorksStyled = styled.div`
 
         & li{
             margin-bottom: 24px;
+            opacity: 0;
+            transition: transform 1s ease,
+                        opacity 1s ease;
 
             @media screen and (min-width: 768px){
                 margin-bottom: 0;
             }
+        }
+
+        & li:nth-child(odd){
+            transform: translateX(-50%);
+        }
+
+        & li:nth-child(even){
+            transform: translateX(50%);
         }
 
         & li:last-child{
@@ -30,12 +41,15 @@ export const WorksStyled = styled.div`
         }
 
         & li:nth-last-child(2){
-            @media screen and (max-width: 767px){
-                display: none;
+            @media screen and (min-width: 768px){
+                visibility: hidden;
+                opacity: 0;
             }
+        }
 
-            visibility: hidden;
-            opacity: 0;
+        & li.active{
+            opacity: 1;
+            transform: translateX(0);
         }
 
         @media screen and (min-width: 768px){
@@ -115,6 +129,7 @@ export const WorksStyled = styled.div`
                 } 
             }
         }
+
     }
 
 
