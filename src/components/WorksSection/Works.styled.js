@@ -29,11 +29,11 @@ export const WorksStyled = styled.div`
         }
 
         & li:nth-child(odd){
-            transform: translateX(-50%);
+            transform: translateX(${p => p.$hebrew? "50%" : "-50%"});
         }
 
         & li:nth-child(even){
-            transform: translateX(50%);
+            transform: translateX(${p => p.$hebrew? "-50%" : "50%"});
         }
 
         & li:last-child{
