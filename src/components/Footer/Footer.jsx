@@ -34,7 +34,10 @@ export const Footer = forwardRef(({propsId, footerRef, hebrew}, reff) => {
                     <address className="footer-adress">
                         <ul className="footer-adress-list">
                             <li className="footer-adress-item">
-                                <a className="footer-tel-link" href="tel:+934534447565">
+                                <a className="footer-tel-link" 
+                                    href={`tel:${t('header.contactUsNumber')}`} 
+                                    aria-label="Telephone link"
+                                >
                                     <PhoneIcon className="footer-phone-icon" width={12}/>
                                     <span>{t('header.contactNumberText')}</span>
                                 </a>

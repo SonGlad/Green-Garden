@@ -190,6 +190,7 @@ export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setN
                         href={`https://wa.me/${fixedBackgroundData.phone}?text=${encodeURIComponent(fixedBackgroundData.baseMessage + ' ' + fixedBackgroundData.title)}`} 
                         target="_blank" 
                         rel="noopener noreferrer"
+                        aria-label="WhatsApp Order Link"
                     >
                         {fixedBackgroundData.orderLink}
                     </a> 
@@ -215,6 +216,7 @@ export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setN
                         href={`https://wa.me/${fixedBackgroundData.phone}?text=${encodeURIComponent(fixedBackgroundData.baseMessage + ' ' + fixedBackgroundData.title)}`} 
                         target="_blank" 
                         rel="noopener noreferrer"
+                        aria-label="WhatsApp Order Link"
                     >
                         {fixedBackgroundData.orderLink}
                     </a>  
@@ -233,10 +235,20 @@ export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setN
             />
             <div className="progress-bar">
                 <div className="button-block">
-                    <button className="my-prev-button" onClick={handlePrev}>
+                    <button className="my-prev-button" 
+                        onClick={handlePrev} 
+                        aria-expanded="false" 
+                        aria-controls="slider-next-button" 
+                        aria-label="Slider Next Button"
+                    >
                         <ArrowSVG className="next arrow-prev" width={20} height={20}/>
                     </button>
-                    <button className="my-next-button" onClick={handleNext}>
+                    <button className="my-next-button" 
+                        onClick={handleNext} 
+                        aria-expanded="false" 
+                        aria-controls="slider-prev-button" 
+                        aria-label="Slider Prev Button"
+                    >
                         <ArrowSVG className="next arrow-next" width={20} height={20}/>
                     </button>
                 </div>

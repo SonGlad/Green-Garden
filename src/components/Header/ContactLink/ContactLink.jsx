@@ -18,6 +18,7 @@ export const ContactLink = ({footer, hebrew}) => {
                 href={whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="WhatsApp link"
             >
                 <span>{t('header.contactUsText')}</span>  
             </a>

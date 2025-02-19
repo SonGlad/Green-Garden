@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter basename='/'>
       <I18nextProvider i18n={i18n}>
         <Suspense fallback={<Loader/>}>
@@ -28,7 +28,7 @@ root.render(
         </Suspense>
       </I18nextProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 

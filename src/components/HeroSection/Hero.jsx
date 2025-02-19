@@ -28,6 +28,7 @@ export const HeroSection = ({hebrew}) => {
                     href={whatsappUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    aria-label="WhatsApp Contact Link"
                 >
                     <span>{t('header.contactUsText')}</span>  
                 </a>

@@ -68,6 +68,7 @@ export const ContactButton = ({hebrew}) => {
                 <ContactStyledButton $hebrew={hebrew} href={whatsappUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    aria-label="WhatsApp Contact Link"
                 >
                     <WhatsAppIcon className={`whatsapp-icon ${isAnimation ? "icon-animation" : ""}`} width={20} height={20}/>
                 </ContactStyledButton>      

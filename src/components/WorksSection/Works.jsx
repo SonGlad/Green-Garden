@@ -9,7 +9,6 @@ export const Works = ({hebrew}) => {
     const { t } = useTranslation();
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [render, setRender] = useState(false);
-    console.log(render);
     
 
     const [refItem1, refItem1InView1] = useInView({ 

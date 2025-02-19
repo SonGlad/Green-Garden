@@ -81,7 +81,10 @@ export const NavLinks = ({
                         <ContactLink/>
                     </li>
                     <li className="adress-item">
-                        <a className="tel-link" href={`tel:${t('header.contactUsNumber')}`}>
+                        <a className="tel-link" 
+                            href={`tel:${t('header.contactUsNumber')}`}
+                            aria-label="Telephone link"    
+                        >
                             <PhoneIcon className="phone-icon" width={12}/>
                             <span>{t('header.contactNumberText')}</span>
                         </a>

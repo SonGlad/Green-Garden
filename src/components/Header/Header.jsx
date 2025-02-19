@@ -125,6 +125,8 @@ export const Header = forwardRef(({
                             className={`lang-button ${toggleLangButtonStyled()}`} 
                             aria-label="Language Button" 
                             onClick={toggleLangMenuOpen}
+                            aria-expanded="false"
+                            aria-controls="language-button"
                         >
                             <p className="lang-text">{langToShow}</p>
                             <ArrowDown className="arrow-svg" width={16} height={16}/>
@@ -142,6 +144,8 @@ export const Header = forwardRef(({
                             className="burger-button" 
                             aria-label="Mobile Menu Button"
                             onClick={setMobileMenuActive}
+                            aria-expanded="false"
+                            aria-controls="mobile-nav-button"
                         >
                             <MobileBurger className="burger-svg" width={36} height={36}/>
                         </button>
@@ -155,6 +159,8 @@ export const Header = forwardRef(({
                                 className="close-btn" 
                                 aria-label="Close Mobile Menu Button"
                                 onClick={setMobileMenuActive}
+                                aria-expanded="false"
+                                aria-controls="burger-menu-close-button"
                             >
                                 <CloseIcon className="close-svg" width={24} height={24}/>
                             </button>
