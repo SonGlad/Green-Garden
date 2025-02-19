@@ -5,8 +5,8 @@
         "works": "How we work",
         "contacts": "Contacts",
         "contactUsText": "Contact us",
-        "contactUsNumber": "+380969692447",
-        "contactNumberText": "+934 53 444-7565",
+        "contactUsNumber": "+972584007285",
+        "contactNumberText": "+972 58 400-7285",
         "contactUsTextMessage": "Hello! I would like to order your services.",
         "description": "We take care of your garden with love and dedication."
     },
@@ -52,7 +52,7 @@
     },
     "footer":{
         "workingTitle": "Working hours",
-        "workingHours": "from 9:00 to 21:00 daily",
+        "workingHours": "from 7:00 to 19:00 daily",
         "rights": "All rights reserved"
     }
 }

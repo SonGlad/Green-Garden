@@ -5,8 +5,8 @@
       "works": "איך אנחנו עובדים",
       "contacts": "צור קשר",
       "contactUsText": "צור קשר איתנו",
-      "contactUsNumber": "+380969692447",
-      "contactNumberText": "+934 53 444-7565",
+      "contactUsNumber": "+972584007285",
+      "contactNumberText": "+972 58 400-7285",
       "contactUsTextMessage": "שלום! אני רוצה להזמין את שירותיך",
       "description": "אנחנו דואגים לגינה שלך עם אהבה ומסירות"
     },
@@ -52,7 +52,7 @@
     },
     "footer": {
         "workingTitle": "שעות פעילות",
-        "workingHours": "מ-9:00 עד 21:00 בכל יום",
+        "workingHours": "מ-7:00 עד 19:00 בכל יום",
         "rights": "כל הזכויות שמורות"
     }
 }

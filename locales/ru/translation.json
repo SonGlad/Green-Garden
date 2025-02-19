@@ -5,8 +5,8 @@
         "works": "Как мы работаем",
         "contacts": "Контакты",
         "contactUsText": "Связаться с нами",
-        "contactUsNumber": "+380969692447",
-        "contactNumberText": "+934 53 444-7565",
+        "contactUsNumber": "+972584007285",
+        "contactNumberText": "+972 58 400-7285",
         "contactUsTextMessage": "Здравствуйте! Я хочу заказать ваши услуги.",
         "description": "Мы заботимся о вашем саде с любовью и преданностью."
     },
@@ -52,7 +52,7 @@
     },
     "footer": {
         "workingTitle": "Часы работы",
-        "workingHours": "с 9:00 до 21:00 ежедневно",
+        "workingHours": "с 7:00 до 19:00 ежедневно",
         "rights": "Все права защищены"
     }
 }
