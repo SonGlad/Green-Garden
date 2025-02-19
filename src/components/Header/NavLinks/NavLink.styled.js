@@ -50,9 +50,6 @@ export const NavLinksStyled = styled.nav`
         & li:first-child{
 
             & .services-list{
-                @media screen and (max-width: 1279px){
-                    display: none;
-                }
                 background: rgba(255, 255, 255, 0.96);
                 width: ${p => p.$hebrew ? "230px" : "260px"};
                 height: auto;
