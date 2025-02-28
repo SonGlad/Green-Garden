@@ -15,6 +15,7 @@ import {ReactComponent as ArrowSVG} from "../../images/svg/arrowDown.svg";
 import { useTranslation } from 'react-i18next';
 import { useState, useMemo, useEffect, useCallback, useRef} from "react";
 import { SwiperDiv } from "./Swiper";
+import useWindowSize from "../../custom-hooks/hooks";
 
 
 
@@ -36,35 +37,12 @@ export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setN
         orderLink: t('services.orderLink'),
     });
     const swiperRef = useRef(null);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [render, setRender] = useState(false);
+    const { renderTab } = useWindowSize();
     
+   
     const delayValue = 4000;
     const speedValue = 1500;
-
-      
-    useEffect(() => {
-        const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-        };
-    
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-    },[]);
-
-    useEffect(() => {
-        if (windowWidth < 1280) {
-            setRender(true)
-        } else {
-            setRender(false);
-        }
-    },[windowWidth])
-    
-    
-
-
+  
     const data = useMemo(() => [
         {
             title: t('services.subTitleOne'),
@@ -181,7 +159,7 @@ export const ServiceSection = ({hebrew, navigateToIndex, isNavigationIndex, setN
  
     return(
         <StyledServiceSection $hebrew={hebrew} style={{ "--speedvalue": `${speedValue}ms`}}>
-            {render && 
+            {renderTab && 
                 <div className="service-tex-cont mobile">
                     <span className={animation ? "span" : ""}></span>
                     <h3 className={animation ? "title" : ""}>{fixedBackgroundData.title}</h3>

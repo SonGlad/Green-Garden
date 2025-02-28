@@ -7,8 +7,10 @@ export const ContactStyledButton = styled.a`
     border-radius: 50%;
     position: fixed;
     z-index: 100;
-    bottom: 5%;
-    ${p => (p.$hebrew ? "left: 1rem;" : "right: 1rem;")}
+    bottom: 4.8%;
+    right: 1.4rem;
+    /* bottom: 8%; */
+    /* ${p => (p.$hebrew ? "left: 1.4rem;" : "right: 1.4rem;")} */
     background-color: ${p => p.theme.color.text_color1};
     padding: 10px;
     display: flex;

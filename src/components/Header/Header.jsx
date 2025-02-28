@@ -10,6 +10,7 @@ import { NavLinks } from "./NavLinks/NavLink";
 import { ContactLink } from "./ContactLink/ContactLink";
 import ScrollIntoView from 'react-scroll-into-view';
 import { useTranslation } from 'react-i18next';
+import useWindowSize from "../../custom-hooks/hooks";
 
 
 
@@ -31,6 +32,7 @@ export const Header = forwardRef(({
     const langCont = useRef(null);
     const [isScrolled, setIsScrolled] = useState(false);
     const { t } = useTranslation();
+    const { renderMob } = useWindowSize();
       
 
     
@@ -139,41 +141,43 @@ export const Header = forwardRef(({
                             ))}
                         </ul>
                     </div>
-                    <div className="mobile-nav-cont">
-                        <button type="button" 
-                            className="burger-button" 
-                            aria-label="Mobile Menu Button"
-                            onClick={setMobileMenuActive}
-                            aria-expanded="false"
-                            aria-controls="mobile-nav-button"
-                        >
-                            <MobileBurger className="burger-svg" width={36} height={36}/>
-                        </button>
-                        <div className={`mob-menu ${toggleMobileStyled()}`}>
-                            <div className="mobile-logo-cont">
-                                <NavLink to={"/"} onClick={setMobileMenuActive}>
-                                    <img className="mobile-header-logo" src={Logo} alt="logo" width={80}/> 
-                                </NavLink>
-                            </div>
+                    {renderMob && (
+                        <div className="mobile-nav-cont">
                             <button type="button" 
-                                className="close-btn" 
-                                aria-label="Close Mobile Menu Button"
+                                className="burger-button" 
+                                aria-label="Mobile Menu Button"
                                 onClick={setMobileMenuActive}
                                 aria-expanded="false"
-                                aria-controls="burger-menu-close-button"
+                                aria-controls="mobile-nav-button"
                             >
-                                <CloseIcon className="close-svg" width={24} height={24}/>
+                                <MobileBurger className="burger-svg" width={36} height={36}/>
                             </button>
-                            <NavLinks
-                                setMobileMenuActive={setMobileMenuActive}
-                                hebrew={hebrew}
-                            />
-                            <p className="menu-description">{t('header.description')}</p>
-                            <ContactLink
-                                hebrew={hebrew}
-                            />
+                            <div className={`mob-menu ${toggleMobileStyled()}`}>
+                                <div className="mobile-logo-cont">
+                                    <NavLink to={"/"} onClick={setMobileMenuActive}>
+                                        <img className="mobile-header-logo" src={Logo} alt="logo" width={80}/> 
+                                    </NavLink>
+                                </div>
+                                <button type="button" 
+                                    className="close-btn" 
+                                    aria-label="Close Mobile Menu Button"
+                                    onClick={setMobileMenuActive}
+                                    aria-expanded="false"
+                                    aria-controls="burger-menu-close-button"
+                                >
+                                    <CloseIcon className="close-svg" width={24} height={24}/>
+                                </button>
+                                <NavLinks
+                                    setMobileMenuActive={setMobileMenuActive}
+                                    hebrew={hebrew}
+                                />
+                                <p className="menu-description">{t('header.description')}</p>
+                                <ContactLink
+                                    hebrew={hebrew}
+                                />
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </Container>
         </HeaderStyled>

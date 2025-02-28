@@ -157,9 +157,7 @@ export const HeaderStyled = styled.header`
     }
 
     .mobile-nav-cont{
-        @media screen and (min-width: 768px){
-            display: none;
-        }
+
     }
 
     .burger-button{

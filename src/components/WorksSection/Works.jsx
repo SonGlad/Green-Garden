@@ -1,15 +1,15 @@
 import { WorksStyled } from "./Works.styled";
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
-import { useState, useEffect } from "react";
+import React from "react";
+import useWindowSize from "../../custom-hooks/hooks";
 
 
 
-export const Works = ({hebrew}) => {
+export const Works = React.memo(({hebrew}) => {
     const { t } = useTranslation();
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [render, setRender] = useState(false);
-    
+    const { renderMob } = useWindowSize();
+     
 
     const [refItem1, refItem1InView1] = useInView({ 
         triggerOnce: false, 
@@ -31,25 +31,6 @@ export const Works = ({hebrew}) => {
         triggerOnce: false, 
         threshold: 0.3,
     });
-
-    useEffect(() => {
-        const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-        };
-    
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-    },[]);
-
-    useEffect(() => {
-        if (windowWidth < 768) {
-            setRender(false);
-        } else {
-            setRender(true);
-        }
-    },[windowWidth])
 
    
     return(
@@ -83,7 +64,7 @@ export const Works = ({hebrew}) => {
                     </div>
                     <p className="work-item-text">{t('work.textFour')}</p>
                 </li>
-                {render && (
+                {!renderMob && (
                     <li className="work-item">
                         <div className="item-title-cont">
                             <span className="item-num">05</span>
@@ -102,4 +83,4 @@ export const Works = ({hebrew}) => {
             </ul>
         </WorksStyled>
     );
-};
+});

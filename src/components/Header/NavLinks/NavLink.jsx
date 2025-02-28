@@ -1,20 +1,22 @@
 import { NavLinksStyled } from "./NavLink.styled";
-import { useMemo, useState, useEffect } from "react";
+import React, { useMemo } from "react";
 import { ContactLink } from "../ContactLink/ContactLink";
 import { ReactComponent as PhoneIcon} from "../../../images/svg/phone.svg";
 import ScrollIntoView from 'react-scroll-into-view';
 import { useTranslation } from 'react-i18next';
+import useWindowSize from "../../../custom-hooks/hooks";
 
 
-export const NavLinks = ({
+
+export const NavLinks = React.memo(({
     setMobileMenuActive,
     hebrew,
     setNavigateToIndex,
     setNavigationIndex
     }, ref) => {
     const { t } = useTranslation();
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [render, setRender] = useState(false);
+    const { renderTab } = useWindowSize();
+
 
     const servicesData = useMemo(() => [
         {
@@ -44,26 +46,6 @@ export const NavLinks = ({
     });
 
 
-    useEffect(() => {
-        const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-        };
-    
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-    },[]);
-
-    useEffect(() => {
-        if (windowWidth < 1280) {
-            setRender(false);
-        } else {
-            setRender(true)
-        }
-    },[windowWidth])
-
-
     return (
         <NavLinksStyled $hebrew={hebrew}>
             <ul className="navigation-list">
@@ -71,7 +53,7 @@ export const NavLinks = ({
                     <ScrollIntoView selector='#ServiceSection' className="nav-link" onClick={setMobileMenuActive}>
                         <span>{t('header.services')}</span>
                     </ScrollIntoView>
-                    {render && (
+                    {!renderTab && (
                         <ul className="services-list">
                             {servicesData && servicesData.map(({serviceTitle}, index) => (
                                 <li key={index} onClick={() => applynavigationIndex(index)}>
@@ -117,4 +99,4 @@ export const NavLinks = ({
             </address>
         </NavLinksStyled>
     );
-};
+});
