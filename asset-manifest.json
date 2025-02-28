@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Green-Garden/static/css/main.7aa04116.css",
-    "main.js": "/Green-Garden/static/js/main.2ce07a1c.js",
+    "main.js": "/Green-Garden/static/js/main.a4154aba.js",
     "static/js/255.a601c381.chunk.js": "/Green-Garden/static/js/255.a601c381.chunk.js",
     "static/media/picture3.webp": "/Green-Garden/static/media/picture3.c9b2150e20f4946f5a7c.webp",
     "static/media/background.webp": "/Green-Garden/static/media/background.9b2d9bcd59242fa3b81b.webp",
@@ -27,11 +27,11 @@
     "static/media/close.svg": "/Green-Garden/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
     "static/media/burger.svg": "/Green-Garden/static/media/burger.fcd5f642cf7711d65bdfd48c01690f8b.svg",
     "main.7aa04116.css.map": "/Green-Garden/static/css/main.7aa04116.css.map",
-    "main.2ce07a1c.js.map": "/Green-Garden/static/js/main.2ce07a1c.js.map",
+    "main.a4154aba.js.map": "/Green-Garden/static/js/main.a4154aba.js.map",
     "255.a601c381.chunk.js.map": "/Green-Garden/static/js/255.a601c381.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aa04116.css",
-    "static/js/main.2ce07a1c.js"
+    "static/js/main.a4154aba.js"
   ]
 }
