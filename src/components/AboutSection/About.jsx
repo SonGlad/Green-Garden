@@ -20,7 +20,7 @@ export const About = ({hebrew}) => {
         <AboutStyled $hebrew={hebrew} ref={refItem}>
             <div className="about-main-cont">
                 <div className={`about-image-cont ${refItem1InView? "active-image-cont" : ""}`}>
-                    <img className="about-img" src={CardImageSeven} alt="about-img"/>
+                    <img className="about-img" src={CardImageSeven} alt="about-img" width={357} height={357}/>
                 </div>
                 <ul className={`about-text-list ${refItem1InView? "active-text-list" : ""}`}>
                     <li className="about-text-item">

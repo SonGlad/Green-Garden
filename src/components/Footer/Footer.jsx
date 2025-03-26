@@ -2,7 +2,7 @@ import { FooterStyled } from "./Footer.styled";
 import { forwardRef, useState, useEffect } from "react";
 import { ContactLink } from "../Header/ContactLink/ContactLink";
 import { ReactComponent as PhoneIcon} from "../../images/svg/phone.svg";
-import Logo from "../../images/images/Logo2.png";
+import Logo from "../../images/images/Logo2.webp";
 import { useTranslation } from 'react-i18next';
 
 
@@ -58,7 +58,7 @@ export const Footer = forwardRef(({propsId, footerRef, hebrew}, reff) => {
                 </div>
             </div>
             <div className="footer-logo-cont">
-                <img className="footer-logo" src={Logo} alt="logo" width={60}/> 
+                <img className="footer-logo" src={Logo} alt="logo" width={80} height={74}/> 
             </div>
         </FooterStyled>
     );

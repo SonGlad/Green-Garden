@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LogoPng from "../../images/images/Logo.png";
+import LogoPng from "../../images/images/Logo.webp";
 
 
 

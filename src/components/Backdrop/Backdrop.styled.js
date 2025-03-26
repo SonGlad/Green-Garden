@@ -24,10 +24,6 @@ export const StyledBackdrop = styled.div`
 
     
     .canvas-cont{
-        @media screen and (max-width: 1279px){
-            display: none;
-        }
-
         width: 100%;
         height: 100%;
         position: absolute;

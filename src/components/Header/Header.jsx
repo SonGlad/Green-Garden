@@ -1,6 +1,6 @@
 import { HeaderStyled } from "./Header.styled";
 import { Container } from "../Container/Container";
-import Logo from "../../images/images/Logo2.png";
+import Logo from "../../images/images/Logo2.webp";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as MobileBurger} from "../../images/svg/burger.svg";
 import { ReactComponent as ArrowDown } from "../../images/svg/arrowDown.svg";
@@ -109,7 +109,7 @@ export const Header = forwardRef(({
             <Container>
                 <div className="header-container">
                     <ScrollIntoView selector="#HeroSection">
-                        <img className="header-logo" src={Logo} alt="logo" width={60}/> 
+                        <img className="header-logo" src={Logo} alt="logo" width={60} height={55}/> 
                     </ScrollIntoView>
                     <div className="desctop-menu">
                         <NavLinks
@@ -155,7 +155,7 @@ export const Header = forwardRef(({
                             <div className={`mob-menu ${toggleMobileStyled()}`}>
                                 <div className="mobile-logo-cont">
                                     <NavLink to={"/"} onClick={setMobileMenuActive}>
-                                        <img className="mobile-header-logo" src={Logo} alt="logo" width={80}/> 
+                                        <img className="mobile-header-logo" src={Logo} alt="logo" width={80} height={74}/> 
                                     </NavLink>
                                 </div>
                                 <button type="button" 
