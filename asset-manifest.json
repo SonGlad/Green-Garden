@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Green-Garden/static/css/main.7aa04116.css",
-    "main.js": "/Green-Garden/static/js/main.a4154aba.js",
+    "main.js": "/Green-Garden/static/js/main.998fdf19.js",
     "static/js/255.a601c381.chunk.js": "/Green-Garden/static/js/255.a601c381.chunk.js",
-    "static/media/picture3.webp": "/Green-Garden/static/media/picture3.c9b2150e20f4946f5a7c.webp",
-    "static/media/background.webp": "/Green-Garden/static/media/background.9b2d9bcd59242fa3b81b.webp",
-    "static/media/picture2.webp": "/Green-Garden/static/media/picture2.91832aa47fb2becf6da4.webp",
-    "static/media/picture6.webp": "/Green-Garden/static/media/picture6.c83db988b2c30ffd847d.webp",
-    "static/media/picture1.webp": "/Green-Garden/static/media/picture1.e1ffb5aeee780ee2811f.webp",
-    "static/media/picture5.webp": "/Green-Garden/static/media/picture5.0dfe2fe8b8015ccad8f5.webp",
-    "static/media/picture7.webp": "/Green-Garden/static/media/picture7.fa6d55abd1f1f7c19ec4.webp",
-    "static/media/picture4.webp": "/Green-Garden/static/media/picture4.632b30f04f25f2bfd3ae.webp",
-    "static/media/Logo2.png": "/Green-Garden/static/media/Logo2.bdd1b9468fd6d72311fe.png",
-    "static/media/Logo.png": "/Green-Garden/static/media/Logo.ed10abde730e39492710.png",
+    "static/media/picture3.webp": "/Green-Garden/static/media/picture3.5d588f3174a5941a12c4.webp",
+    "static/media/background.webp": "/Green-Garden/static/media/background.bd5023e952b486580228.webp",
+    "static/media/picture2.webp": "/Green-Garden/static/media/picture2.0547670e3a4de14cff0a.webp",
+    "static/media/picture6.webp": "/Green-Garden/static/media/picture6.9d6a1647ca03ff7f0e5f.webp",
+    "static/media/picture1.webp": "/Green-Garden/static/media/picture1.5efb1f0e68b6612ce3b3.webp",
+    "static/media/picture5.webp": "/Green-Garden/static/media/picture5.f8b4415562bee783a57f.webp",
+    "static/media/picture7.webp": "/Green-Garden/static/media/picture7.1228d9505a8e2786f63a.webp",
+    "static/media/picture4.webp": "/Green-Garden/static/media/picture4.9f31ce988ebccd5cd24b.webp",
+    "static/media/Logo2.webp": "/Green-Garden/static/media/Logo2.85dbe0544f3bff97fd88.webp",
+    "static/media/Logo.webp": "/Green-Garden/static/media/Logo.cd76e85665510a43d488.webp",
     "static/media/about-decr-svg.svg": "/Green-Garden/static/media/about-decr-svg.87badeb1f408ea3f3667c865cb7e89d6.svg",
     "static/media/picture6_svg.svg": "/Green-Garden/static/media/picture6_svg.e80a6643a8e847238d070b458f396600.svg",
     "static/media/picture1_svg.svg": "/Green-Garden/static/media/picture1_svg.dd1c7ced6dc0f3e8615caa2f93e82c92.svg",
@@ -27,11 +27,11 @@
     "static/media/close.svg": "/Green-Garden/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
     "static/media/burger.svg": "/Green-Garden/static/media/burger.fcd5f642cf7711d65bdfd48c01690f8b.svg",
     "main.7aa04116.css.map": "/Green-Garden/static/css/main.7aa04116.css.map",
-    "main.a4154aba.js.map": "/Green-Garden/static/js/main.a4154aba.js.map",
+    "main.998fdf19.js.map": "/Green-Garden/static/js/main.998fdf19.js.map",
     "255.a601c381.chunk.js.map": "/Green-Garden/static/js/255.a601c381.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aa04116.css",
-    "static/js/main.a4154aba.js"
+    "static/js/main.998fdf19.js"
   ]
 }
